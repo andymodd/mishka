@@ -1,10 +1,103 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Милые штуки ручной работы для дома</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Милые штуки ручной работы для дома</title>
 </head>
 <body>
+  <header class="header">
+    <img src="https://via.placeholder.com/86x35" alt="Логотип магазина" class="header__logo" width="86" height="35">
+    <button class="header__button-menu"></button>
+    <nav class="header__nav">
+      <ul class="header__list">
+       <li class="header__item"><a href="catalog.html" class="header__link">Каталог товаров</a></li>
+        <li class="header__item"><a href="form.html" class="header__link">Вязание на заказ</a></li>
+      </ul>
+    </nav>
+    <ul class="header__list">
+      <li class="header__item"><a href="#" class="header__link">Поиск по сайту</a></li>
+      <li class="header__item"><a href="#" class="header__link">Корзина: пока пуста</a></li>
+    </ul>
+    <ul class="header__list">
+      <li class="header__item"><a href="#" class="header__link">Новые поступления</a></li>
+      <li class="header__item"><a href="#" class="header__link">Распродажа</a></li>
+    </ul>
+  </header>
+  <main class="main">
+    <h1 class="visually-hidden">Мишка - интернет-магазин вещей ручной работы для дома</h1>
+    <section class="main__promo promo">
+      <h2 class="promo__title">Милые штуки ручной работы для дома</h2>
+      <a href="#" class="promo__link"><h3 class="promo__subtitle">Предметы интерьера</h3></a>
+      <a href="#" class="promo__link"><h3 class="promo__subtitle">Детские игрушки</h3></a>
+    </section>
+    <section class="main__offer week-product">
+      <h2 class="week-product__title section-title">Вязаные корзинки</h2>
+      <p class="week-product__subtitle">Товар недели</p>
+      <img src="https://via.placeholder.com/260x315" alt="Фотография товара" class="offer__img" width="260" height="315">
+      <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+      <table class="week-product__info">
+        <tr class="week-product__row">
+          <td class="week-product__cell">Цвет</td>
+          <td class="week-product__cell">«Тиффани»/серый</td>
+        </tr>
+        <tr class="week-product__row">
+          <td class="week-product__cell">Диаметр</td>
+          <td class="week-product__cell">25 см</td>
+        </tr>
+        <tr class="week-product__row">
+          <td class="week-product__cell">Высота</td>
+          <td class="week-product__cell">15 см</td>
+       </tr>
+      </table>
+      <p class="week-product__price">Цена 990 руб.</p>
+      <a href="#" class="week-product__link button">Заказать</a>
+    </section>
+    <section class="main__features features">
+      <h2 class="features__title section-title">Коротко о нас:</h2>
+      <ul class="features__list">
+        <li class="features__item">Экологически чистые материалы</li>
+        <li class="features__item">Скандинавский стиль по российской цене</li>
+        <li class="features__item">Увеличивает лайки на фотографиях</li>
+        <li class="features__item">Связано вручную с любовью и умилением</li>
+        <li class="features__item">Поддержка отечественного производителя</li>
+        <li class="features__item">Поставляется в подарочной упаковке</li>
+      </ul>
+    </section>
+    <section class="main__feedback feedback">
+      <h2 class="feedback__title section-title"></h2>
+      <blockquote class="feedback__content">
+        <p class="feedback__text">
+          Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
+          В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+        </p>
+      </blockquote>
+      <div class="feedback__author">
+        <p class="feedback__author-name">Анастасия Красильникова</p>
+        <a href="#" class="feedback__hashtag">@misssssiskras</a>
+      </div>
+      <div class="feedback__controls">
+        <button class="feedback__controls-btn"></button>
+        <button class="feedback__controls-btn"></button>
+      </div>
+      <a href="#" class="feedback__button button">Написать</a>
+    </section>
+    <section class="main__contacts contacts"></section>
+    <h2 class="contacts__title section-title">Контакты</h2>
+    <ul class="contacts__list">
+      <li class="contacts__item">email:<a href="mailto:info@mimimishkashop.ru" class="contacts__Link">info@mimimishkashop.ru</a></li>
+      <li class="contacts__item">адрес: <span class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span></li>
+    </ul>
+    <img src="https://via.placeholder.com/320x475" alt="Магазин на карте города Санкт-Петербург" class="contacts__img" width="320" height="457">
+    <a href="#" class="contacts__button button">Напишите нам</a>
+  </main>
+  <footer class="footer">
+    <ul class="footer__social-list">
+      <li class="footer__social-item"><a href="#" class="footer__social-link">Instagram</a></li>
+      <li class="footer__social-item"><a href="#" class="footer__social-link">Facebook</a></li>
+      <li class="footer__social-item"><a href="#" class="footer__social-link">Twitter</a></li>
+    </ul>
+    <a href="#" class="footer__copyright">Разработано</a>
+  </footer>
 </body>
 </html>
