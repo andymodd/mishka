@@ -11,13 +11,36 @@
   @include text(17px, 24px);
   font-weight: bold;
   color: $black;
+
+  &--visibility {
+    display: none;
+  }
 }
 
 .header__item {
-  padding-left: 23.75%;
-  padding-right: 9.375%;
+  position: relative;
 
-  box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 50vw);
+    width: 100vw;
+    height: 0.5px;
+    background: #ececec;
+
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 50vw);
+    width: 100vw;
+    height: 0.5px;
+    background: #ececec;
+
+    content: "";
+  }
 }
 
 .header__nav {
@@ -26,23 +49,93 @@
 }
 
 .header__link {
+  position: relative;
   display: block;
   padding: 27.5px 0;
+  padding-left: 17.6923077%; //23.75%
+  padding-right: 11.5384615%; //9.375%
   color: inherit;
   text-decoration: none;
 }
 
+.header__svg {
+  position: absolute;
+  left: 0;
+  opacity: 0.2;
+}
+
 .header__logo {
-  margin-left: 36.5625%;
+  margin-left: 33.0769231%; //36.5625%
+}
+
+.header__ship {
+  display: none;
 }
 
 .header__button-menu {
   align-self: center;
   margin-left: auto;
-  margin-right: 9.375%;
   padding: 0;
   width: 20px;
   height: 20px;
   border: none;
-  background: $black;
+  background: url("../img/icon-menu-close.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    align-items: center;
+    padding-top: 0;
+  }
+
+  .header__nav {
+    margin: 0;
+    order: 1;
+  }
+
+  .header__list {
+    &--small-width {
+      display: flex;
+      margin-left: auto;
+      width: 52.245509%;
+    }
+  }
+
+  .header__item {
+    width: 76.504298%;
+
+    &::before,
+    &::after {
+      content: none;
+    }
+
+    &--text-indent {
+      text-indent: -5000px;
+      width: 23.495702%;
+    }
+
+    &--text-indent .header__svg {
+      top: calc(50% - 8.795px);
+      left: calc(50% - 8.795px);
+    }
+  }
+
+  .header__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 31.086142%;
+    padding-right: 0;
+  }
+
+  .header__svg {
+    left: 11.6104869%;
+  }
+
+  .header__logo {
+    margin: 0;
+  }
+
+  .header__button-menu {
+    display: none;
+  }
 }
